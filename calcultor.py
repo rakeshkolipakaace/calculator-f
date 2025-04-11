@@ -16,8 +16,11 @@ def subtract(a,b):
 def multiply():
     return
 
-def divide():
-    return
+def divide(a,b):
+    if(b!=0):
+        return a/b
+    else:
+        return math.inf
 
 def modulus():
     return
@@ -29,6 +32,7 @@ def calculator():
     print(f"Values received: a = {a}, b = {b}")
     print(f"Addition of {a} and {b} is {add(a,b)}")
     print(f"Subtraction of {a} and {b} is {subtract(a,b)}")
+    print(f"Division of {a} and {b} is {divide(a,b)}")
     
 
 if __name__ == "__main__":
